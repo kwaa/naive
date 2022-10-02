@@ -26,3 +26,8 @@ docker run --dt \
 --restart unless-stopped \
 kwaabot/naive
 ```
+
+## Related
+
+- [klzgrad/naiveproxy](https://github.com/klzgrad/naiveproxy) - upstream source
+- [kwaa/caddy](https://github.com/kwaa/caddy) - serverside
