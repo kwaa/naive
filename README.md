@@ -16,12 +16,12 @@ docker pull ghcr.io/kwaa/naive # GitHub Container Registry
 
 ### Run
 
-> with the [example configuration](https://github.com/klzgrad/naiveproxy/blob/master/src/config.json) located at `/etc/naive/config.json`
+> configuration located at `/etc/naive/config.json`
 
 ```bash
 docker run --dt \
 --name naive \
--p 1080:1080 \
+--network host \
 -v /etc/naive/config.json:/etc/naive/config.json \
 --restart unless-stopped \
 kwaabot/naive
