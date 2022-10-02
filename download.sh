@@ -18,9 +18,10 @@ for arch in x64 arm64
         # remove useless file
         rm -r "naiveproxy-${version}-linux-${arch}"
         rm "naiveproxy-${version}-linux-${arch}.tar.xz"
-        # keep alive
-        git config --local user.name 'GitHub Action'
-        git config --local user.email 'action@github.com'
-        git commit --allow-empty -m "${version}"
-        git push -v --progress
     done
+
+# keep alive
+git config --local user.name 'GitHub Action'
+git config --local user.email 'action@github.com'
+git commit --allow-empty -m "${version}"
+git push -v --progress
