@@ -16,7 +16,7 @@ docker pull ghcr.io/kwaa/naive # GitHub Container Registry
 
 ### Run
 
-> Example: with the [sample configuration](https://github.com/klzgrad/naiveproxy/blob/master/src/config.json) located at `/etc/naive/config.json`
+> with the [example configuration](https://github.com/klzgrad/naiveproxy/blob/master/src/config.json) located at `/etc/naive/config.json`
 
 ```bash
 docker run --dt \
