@@ -19,7 +19,7 @@ docker pull ghcr.io/kwaa/naive # GitHub Container Registry
 > configuration located at `/etc/naive/config.json`
 
 ```bash
-docker run --dt \
+docker run -dt \
 --name naive \
 --network host \
 -v /etc/naive/config.json:/etc/naive/config.json \
