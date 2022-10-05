@@ -1,9 +1,8 @@
-FROM alpine:latest
+FROM debian:sid-slim
 
 ARG TARGETARCH
 
-RUN set -xe \
-  && apk add --no-cache --virtual libnss3 nss
+RUN apt update && apt install libnss3 -y
 
 COPY naive_${TARGETARCH} /usr/bin/naive
 
